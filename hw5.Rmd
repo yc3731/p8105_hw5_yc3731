@@ -1,0 +1,22 @@
+---
+title: "p8105_hw5_yc3731"
+author: "Yue Chen"
+date: "11/17/2020"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(dplyr)
+```
+
+## Problem 1
+
+# Import dataset.
+```{r}
+homecide = read.csv("./data/homicide-data.csv")
+```
+# Describe dataset.
+
+The raw dataset has `r nrow(homecide)` observations and `r ncol(homecide)` columns. 
+Variables in the dataset include `r names(homecide)`. 
